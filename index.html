@@ -14,14 +14,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,500;1,200&display=swap"
         rel="stylesheet">
     
-    
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-style" id="navbar">
-        <a class="nav-item nav-link" href="#about">About me</a>
-        <a class="nav-item nav-link" href="#skills">Skills</a>
-        <a class="nav-item nav-link" href="#contact">Contact</a>
+        <button class="nav-item nav-link" id="menu-hamburger"><i class="fa fa-bars"></i></button>
+        <a id=nav-link class="nav-item nav-link" href="#about">About me</a>
+        <a id=nav-link class="nav-item nav-link" href="#skills">Skills</a>
+        <a id=nav-link class="nav-item nav-link" href="#projects">Projects</a>
+        <a id=nav-link class="nav-item nav-link" href="#contact">Contact</a>
     </nav>
     <div class="row">
         <div class="container main" id="main">
@@ -46,24 +47,61 @@
                         in web
                         development with languages and technologies like:</p>
                     <div class="skills">
-                        <img class="icon-tech" src="./images/angular.png" title="ANGULAR">
-                        <img class="icon-tech" src="./images/php.png" title="PHP">
                         <img class="icon-tech" src="./images/html.png" title="HTML">
-                        <img class="icon-tech" src="./images/js.png" title="JAVASCRIPT">
                         <img class="icon-tech" src="./images/css.png" title="CSS">
+                        <img class="icon-tech" src="./images/javascript.png" title="JAVASCRIPT">
+                        <img class="icon-tech" src="./images/angular.png" title="ANGULAR">
+                        <img class="icon-tech" src="./images/android.png" title="ANDROID - JAVA">
+                        <img class="icon-tech" src="./images/php.png" title="PHP">
                     </div>
                 </div>
             </div>
 
 
-            <div class="section div-w" id="contact">
+            <div class="section-project div-w" id="projects">
+                <div class="col-sm" id="projects">
+                    <h2 class="title"><span class="text-alt">P</span>rojects</h2>
+                    <div class="card-project">
+                        <div class="card-image-body">
+                            <img src=" /images/watercare.jpg" alt="" class="card-image">
+                        </div>
+                        <div class="card-text">
+                            <p class="card-title"><span class="text-alt">W</span>ater Care Social Media</p>
+                            <p class="text">
+                                "Hobby android app to create post and share ideas about water careful".
+                            </p>
+                            <div class="card-tech">
+                                <img src="/images/android.png" alt="ANDROID" class="card-icon">
+                                <img src="/images/firebase.png" alt="FIREBASE" class="card-icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-project">
+                        
+                        <div class="card-text">
+                            <p class="card-title"><span class="text-alt">M</span>iagua Social Media</p>
+                            <p class="text">
+                                "Hobby web application to create post and share ideas about water careful".</p>
+                            <div class="card-tech">
+                                <img src="/images/php.png" alt="PHP" class="card-icon">
+                                <img src="/images/html.png" alt="HTML" class="card-icon">
+                                <img src="/images/css.png" alt="CSS" class="card-icon">
+                            </div>
+                        </div>
+                        <div class="card-image-body">
+                            <img src="/images/miagua.png" alt="" class="card-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="contact">
                 <div class="col-sm">
                     <h2 class="title"><span class="text-alt">C</span>ontact</h2>
                     <p class="text">For more information, you can write me an email or direct message on one of these
                         networks.</p>
                     <div class="icon">
-                        <a href="mailto:kennedygamarrad@gmail.com"><i class="fa fa-envelope"></i></a>
-
+                        <a class="link-button" href="mailto:kennedygamarrad@gmail.com"><button class="button">Send me a
+                                mail <i class="fa fa-envelope"></i></button></a>
                     </div>
                 </div>
             </div>
@@ -71,20 +109,6 @@
 
         </div>
     </div>
-    
-    
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-
-    $(function () {
-        $(document).scroll(function () {
-            var $nav = $(".navbar");
-            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-        });
-    });
-</script>
 </body>
+<script src="script.js"></script>
 </html>
-
-
-
