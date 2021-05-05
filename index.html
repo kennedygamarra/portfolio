@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="images/suitcase.png">
+    <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,500;1,200&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-style" id="navbar">
+        <a class="nav-item nav-link" href="#about">About me</a>
+        <a class="nav-item nav-link" href="#skills">Skills</a>
+        <a class="nav-item nav-link" href="#contact">Contact</a>
+    </nav>
+    <div class="row">
+        <div class="container main" id="main">
+            <div class="section">
+
+                <h2 class="text-main"><span class="text-alt">Hi, I'm </span>
+                    Kennedy Gamarra</h2>
+                <p class="text-1">System Engineer</p>
+            </div>
+            <div class="section div-w" id="about">
+                <div class="col-sm">
+                    <h2 class="title"><span class="text-alt">A</span>bout me</h2>
+                    <p class=" text">Hi, I'm from Colombia. I define myself as a nice and respectful person, i like get
+                        learning about the technology and software development, and o also i like the front-end
+                        development, so that im trying to improve each day.</p>
+                </div>
+            </div>
+            <div class="section" id="skills">
+                <div class="col-sm">
+                    <h2 class="title"><span class="text-alt">S</span>kills</h2>
+                    <p class=" text">I'm student at Simón Bolívar University and autodidact with knowledge and skills
+                        in web
+                        development with languages and technologies like:</p>
+                    <div class="skills">
+                        <img class="icon-tech" src="/images/angular.png" title="ANGULAR">
+                        <img class="icon-tech" src="/images/php.png" title="PHP">
+                        <img class="icon-tech" src="/images/html.png" title="HTML">
+                        <img class="icon-tech" src="/images/js.png" title="JAVASCRIPT">
+                        <img class="icon-tech" src="/images/css.png" title="CSS">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="section div-w" id="contact">
+                <div class="col-sm">
+                    <h2 class="title"><span class="text-alt">C</span>ontact</h2>
+                    <p class="text">For more information, you can write me an email or direct message on one of these
+                        networks.</p>
+                    <div class="icon">
+                        <a href="mailto:kennedygamarrad@gmail.com"><i class="fa fa-envelope"></i></a>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+    $(function () {
+        $(document).scroll(function () {
+            var $nav = $(".navbar");
+            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+    });
+</script>
