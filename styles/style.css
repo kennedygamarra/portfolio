@@ -1,5 +1,7 @@
 /* family=Raleway:ital,wght@0,200;0,300;0,500;1,200 */
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   background-color: #202442;
   height: 100%;
