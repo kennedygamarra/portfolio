@@ -8,7 +8,6 @@ window.onscroll = function () {
 }
 
 
-
 var btnHamburger = document.getElementById("menu-hamburger");
 
 function toggleMenu() {
